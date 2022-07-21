@@ -6,13 +6,28 @@
     "rules": "storage.rules"
   },
   "hosting": {
+    "predeploy": "npm run build",
     "public": "./public",
-    "headers": [{
-      "source" : "**/*.@(js|html)",
-      "headers" : [ {
-        "key" : "Cache-Control",
-        "value" : "max-age=0"
-      } ]
-    }]
+    "headers": [
+      {
+        "source": "**/*.@(js|html)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=0"
+          }
+        ]
+      }
+    ]
+  },
+  "emulators": {
+    "hosting": {
+      "port": 5000,
+      "host": "0.0.0.0"
+    },
+    "firestore": {
+      "host": "0.0.0.0",
+      "port": 5001
+    }
   }
 }

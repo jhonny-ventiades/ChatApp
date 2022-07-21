@@ -1,6 +1,7 @@
 {
   "projects": {
-    "staging": "mychatapp-8090d"
+    "staging": "mychatapp-8090d",
+    "default": "mychatapp-8090d"
   },
   "targets": {}
 }
