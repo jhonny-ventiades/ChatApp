@@ -86,12 +86,12 @@ main, #messages-card {
 .message-container .spacing {
   display: table-cell;
   vertical-align: top;
-  color: green;
 }
 .message-container .message {
   display: table-cell;
   width: calc(100% - 40px);
   padding: 5px 0 5px 10px;
+  color: green;
 }
 .message-container .name {
   display: inline-block;
