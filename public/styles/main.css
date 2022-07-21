@@ -86,6 +86,7 @@ main, #messages-card {
 .message-container .spacing {
   display: table-cell;
   vertical-align: top;
+  color: green;
 }
 .message-container .message {
   display: table-cell;
