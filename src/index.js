@@ -416,7 +416,6 @@
 
 const firebaseApp = initializeApp(getFirebaseConfig());
 
-// TODO: Initialize Firebase Performance Monitoring.
 const perf = getPerformance();
 
 initFirebaseAuth();
